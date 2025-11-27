@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Great+Vibes&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f6d050;
+    font-family: "Figtree";
+}
+
+.parent-card {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+.main-card:hover{
+    transform: translateY(-20px);
+
+}
+
+.main-card {
+    width: 25rem;
+    background-color: white;
+    border: solid black 1.5px;
+    filter: drop-shadow(5px 10px 1px);
+    border-radius: 12px;
+    padding: 17px;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.card-img {
+    overflow: hidden;        /* Stops image from crossing border */
+    border-radius: 10px;     /* So image & card match shape */
+}
+.card-img img {
+    
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+    transform-origin: center;
+    display: block;
+    
+
+}
+.card-img:hover img{
+    transform: scale(1.1);
+}
+
+.content h1 {
+    width: fit-content;
+    background-color: #f6d050;
+    padding: 0px 15px 0px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.content-date {
+    color: gray;
+    margin-bottom: 10px;
+
+
+}
+
+.heading-2 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.para {
+    color: rgb(68, 66, 66);
+    margin-bottom: 40px
+}
+
+/* image section with name and attribution */
+
+.img-footer{
+        width: fit-content;
+    display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+
+.img-footer:hover img{
+   animation: zoom 0.5s ease forwards;
+    
+}
+    
+@keyframes zoom {
+    from{
+        transform: scale(1);
+        filter:  drop-shadow( 3px 1px 0px);
+       
+    }
+    to{
+        transform: scale(1.1);
+        filter: drop-shadow(3px 1px 2px);
+     
+    }
+
+}
+.img-footer p{
+    font-weight: bold;
+    margin-left: 15px;
+    padding: 10px;
+    cursor: pointer;
+     transition: all 0.4s ease-in-out;
+    
+}
+.img-footer:hover p{
+    background-color: #ffe695;
+    border-radius: 10px;
+}
+.attribution{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+ 
+    
+    
+}
